@@ -13,8 +13,6 @@
 
 
 $posts = [
-
-
     '10/01/2019' => [  /* post */
 
 
@@ -33,8 +31,6 @@ $posts = [
 
 
     ],
-
-
     '10/02/2019' => [ /* post */
         [
             'title' => 'Post 3',
@@ -67,30 +63,37 @@ $posts = [
 <?php print_r(array_keys($posts)[0]) ?>
 </pre>
 
+<ul>
 <?php foreach($posts['10/01/2019'] as $post) {?>
-      <p><?php echo($post['title'])?></p>
-      <p><?php echo($post['author'])?></p>
-      <p><?php echo($post['text'])?></p>
+    <li><?php echo($post['title'])?></li>
+    <li><?php echo($post['author'])?></li>
+    <li><?php echo($post['text'])?></li>
 <?php }?>
+</ul>
 
 <pre>
 <?php print_r(array_keys($posts)[1]) ?>
 </pre>
 
+<ul>
 <?php foreach($posts['10/02/2019'] as $post) {?>
-      <p><?php echo($post['title'])?></p>
-      <p><?php echo($post['author'])?></p>
-      <p><?php echo($post['text'])?></p>
+    <li><?php echo($post['title'])?></li>
+    <li><?php echo($post['author'])?></li>
+    <li><?php echo($post['text'])?></li>
 <?php }?>
+</ul>
 
 <pre>
 <?php print_r(array_keys($posts)[2]) ?>
 </pre>
+
+<ul>
 <?php foreach($posts['15/05/2019'] as $post) {?>
-      <p><?php echo($post['title'])?></p>
-      <p><?php echo($post['author'])?></p>
-      <p><?php echo($post['text'])?></p>
+    <li><?php echo($post['title'])?></li>
+    <li><?php echo($post['author'])?></li>
+    <li><?php echo($post['text'])?></li>
 <?php }?>
+</ul>
     
 </body>
 </html>
